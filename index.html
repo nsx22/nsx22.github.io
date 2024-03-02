@@ -15,7 +15,7 @@
      -->
     <link rel="icon" href="./assets/images/1311.png" />
 		<title>Aryan's Portfolio</title>
-    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <meta name="description" content="Aryan's Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<link rel="stylesheet" href="./css/layout.css">
@@ -25,17 +25,56 @@
 		<script defer src="./js/script.js"></script>
 	</head>
 	<body>
-    <!-- NAVBAR -->
+    <header class="header">
+      <a href="#" class="header__logo">Aryan's Portfolio</a>
+
+      <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+
+      <nav class="nav" id="nav-menu">
+          <div class="nav__content bd-grid">
+
+              <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
+
+              <div class="nav__perfil">
+                  <!-- <div class="nav__img">
+                      <img src="assets/img/perfil.png" alt="">
+                  </div> -->
+                  
+                  <div>
+                      <a href="#" class="nav__name">Aryan's Portfolio</a>
+                  </div>
+              </div>
+
+              <div class="nav__menu">
+                  <ul class="nav__list">
+                      <li class="nav__item"><a href="#" class="nav__link active">Home</a></li>
+                      <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                      <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
+                      <li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
+                      <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                  </ul>
+              </div>
+
+              <div class="nav__social">
+                  <!-- <a href="#" class="nav__social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+                  <a href="#" class="nav__social-icon"><ion-icon name="logo-github"></ion-icon></a>
+                  <a href="#" class="nav__social-icon"><ion-icon name="logo-behance"></ion-icon></a> -->
+                  <pre>
+              </div>
+              
+          </div>
+      </nav>
+  </header>
+    <!-- NAVBAR
     <div class="navbar">
       <a class="nav-title-link" href="./index.html">
-        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
         <span class="nav-title">Aryan's Portfolio</span>
-         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
         <a class="button" href="mailto:inbox.aryan@gmail.com">
           <span class="button-text">Contact Me</span>
         </a>
       </a>
     </div>
+    -->
 
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
@@ -163,27 +202,27 @@
         TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
 
         This should be the same across all pages.
-      -->
       <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
         <image src="./assets/icons/instagram.svg" class="footer-icon"/>
       </a>
-      <!-- 
         TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
       
         This should be the same across all pages.
       -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="./assets/icons/twitter.svg" class="footer-icon"/>
+      <a class="icon-link" target="_blank" href="https://github.com/nsx22">
+        <image src="./assets/icons/github.svg" class="footer-icon"/>
       </a>
       <!-- 
         TODO - Change the email after "mailto" to your contact email 
       
         This should be the same across all pages.
       -->
-      <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
+      <a class="icon-link" href="mailto:inbox.aryan@gmail.com">
         <image src="./assets/icons/mail.svg" class="footer-icon"/>
       </a>
     </div>
-
+    <!-- ===== IONICONS and header ===== -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="js/header.js"></script>
 	</body>
 </html>
