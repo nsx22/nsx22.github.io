@@ -22,6 +22,8 @@
   <link rel="stylesheet" href="./css/layout.css">
   <link rel="stylesheet" href="./css/typography.css">
   <link rel="stylesheet" href="./css/utilities.css">
+  <link rel="stylesheet" href="./css/gallery.css">
+  <link rel="stylesheet" href="./css/lightbox.css">
 
   <script defer src="./js/script.js"></script>
 </head>
@@ -83,19 +85,19 @@
           - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
           - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
         -->
-      <div class="main-title">Project Name</div>
-      <div class="body-text">A small description about the project goes here, get the reader hooked on the project and
-        tell them why they should continue to read this page. Give it a sweet tagline.</div>
+      <div class="main-title">Art</div>
+      <div class="body-text">My many artworks are displayed here.</div>
       <image class="project-header-image" src="./assets/images/desktop.jpeg">
     </div>
 
+
     <!-- PROJECT DETAILS -->
     <!-- 
-      TODO
+    TODO
 
-      - Change the 'subheader-text' to whatever header you want for project details
-      - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
-    -->
+    - Change the 'subheader-text' to whatever header you want for project details
+    - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
+  -->
     <div id="project-details">
       <div class="subheader-text">Project Details / Background</div>
       <div class="project-details-content">
@@ -112,51 +114,16 @@
           pulvinar sapien et ligula. Donec enim diam vulputate ut.</div>
       </div>
     </div>
-
-    <!-- IMAGE GALLERY -->
-    <div id="project-gallery">
-      <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
-      <div class="subheader-text">Image Gallery</div>
-      <div class="project-gallery-content">
-        <!-- 
-            TODO
-
-            This is where the images in the gallery live. Here's a simple gallery image for you to copy:
-
-            Full Width Image:
-
-              <div class="gallery-image-container">
-                <img src="./assets/images/IMAGE_NAME" class="gallery-image">
-                <span class="image-caption">IMAGE_CAPTION</span>
-              </div>
-
-            Half Width Image: 
-
-              <div class="gallery-image-container half-width">
-                <img src="./assets/images/IMAGE_NAME" class="gallery-image">
-                <span class="image-caption">IMAGE_CAPTION</span>
-              </div>
-
-            - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
-                - IMAGE_NAME: the name of the image file in assets/images
-                - IMAGE_CAPTION: to the caption of the image
-          -->
-        <div class="gallery-image-container half-width">
-          <img src="./assets/images/code.jpeg" class="gallery-image">
-          <span class="image-caption">Give your image a caption. People love context.</span>
-        </div>
-        <div class="gallery-image-container half-width">
-          <img src="./assets/images/sketchbook.jpeg" class="gallery-image">
-          <span class="image-caption">Give your image a caption. People love context.</span>
-        </div>
-        <div class="gallery-image-container">
-          <img src="./assets/images/camera.jpeg" class="gallery-image">
-          <span class="image-caption">Give your image a caption. People love context.</span>
-        </div>
-      </div>
-    </div>
   </div>
 
+  <div class="gContainer">
+    <div class="gallery">
+      <a href="./assets/images/camera.jpeg" data-lightbox="models" data-title="Caption1">
+        <img src="./assets/images/camera.jpeg">
+      </a>
+    </div>
+  </div>
+  
   <!-- FOOTER -->
   <div id="footer">
     <a class="icon-link" target="_blank" href="https://github.com/nsx22">
@@ -172,6 +139,9 @@
   <!-- ===== IONICONS and header ===== -->
   <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
   <script src="./js/header.js"></script>
+
+  <!-- Lightbox -->
+  <script defer src="./js/lightbox-plus-jquery.js"></script>
 </body>
 
 </html>
